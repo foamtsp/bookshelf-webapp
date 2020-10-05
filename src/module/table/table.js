@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 
 
 function Table(props) {
-  const [user, setUser] = useState(props.users);
+  const [user, setUser] = useState(props.location.state.user);
   const [isbn, setIsbn] = useState('');
   const [bookName, setBookName] = useState('');
 
